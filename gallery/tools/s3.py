@@ -46,14 +46,14 @@ def get_object(bucket_name, key):
         logging.error(e)
         return None
     return result
-
-
-
-def main() :
-    #create_bucket('edu.au.cc.image-gallery-2','us-east-2')
-    put_object('edu.au.cc.image-gallery-2', 'mango', 'green')
-    # print(get_object('edu.ac.cc.image-gallery-2', 'mango')
     
+
+def main():
+    #create_bucket('edu.au.cc.image-gallery','us-east-2')
+    put_object('edu.au.cc.image-gallery-2', 'banana', 'green')
+    print(get_object('edu.au.cc.image-gallery-2', 'banana')['Body'].read())
+
 if __name__ == '__main__':
     main()
+
 
